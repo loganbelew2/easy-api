@@ -65,6 +65,18 @@
       "email": "Gizmo@example.com",
       "isEmployee": true,
       "id": 11
+    },
+    {
+      "name": "john hancock",
+      "email": "johnCena10@gmail.com",
+      "isEmployee": false,
+      "id": 12
+    },
+    {
+      "email": "loganbelew2@gmail.com",
+      "fullName": "Logan Belew",
+      "isStaff": true,
+      "id": 13
     }
   ],
   "customers": [
@@ -72,7 +84,7 @@
       "id": 1,
       "address": "6208 kennedy Road, Trinity",
       "phoneNumber": 9776923210,
-      "loyaltyMember": false,
+      "loyaltyMember": true,
       "userId": 3
     },
     {
@@ -86,14 +98,14 @@
       "id": 3,
       "address": "9012 Maple Drive, Villageland",
       "phoneNumber": 1234567890,
-      "loyaltyMember": true,
+      "loyaltyMember": false,
       "userId": 5
     },
     {
       "id": 4,
       "address": "3456 Pine Road, Hamletville",
       "phoneNumber": 7890123456,
-      "loyaltyMember": false,
+      "loyaltyMember": true,
       "userId": 7
     },
     {
@@ -102,6 +114,13 @@
       "phoneNumber": 246810214,
       "loyaltyMember": true,
       "userId": 9
+    },
+    {
+      "address": "224 holt road",
+      "phoneNumber": "813-632-9901",
+      "userId": 12,
+      "id": 6,
+      "loyaltyMember": false
     }
   ],
   "employees": [
@@ -154,469 +173,7 @@
       "name": "Snack"
     }
   ],
-  "foodItems": [
-    {
-      "userId": 1,
-      "food": "Eggs, Grade A, Large, egg whole",
-      "nutrientId": 748967,
-      "listId": 1,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "food": "Pasta, cooked",
-      "nutrientId": 2343841,
-      "listId": 1,
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "food": "Sausage, smoked link sausage, pork",
-      "nutrientId": 174584,
-      "listId": 1,
-      "id": 3
-    }
-  ],
-  "lists": [
-    {
-      "name": "Logans List",
-      "categoryId": "1",
-      "userId": 2,
-      "id": 1
-    },
-    {
-      "name": "Logans second List",
-      "categoryId": "2",
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "name": "new list",
-      "categoryId": "4",
-      "userId": 1,
-      "id": 3
-    }
-  ],
-  "nutrients": [
-    {
-      "marker": 748967,
-      "name": "Calcium, Ca",
-      "amount": 48,
-      "unit": "mg",
-      "id": 1
-    },
-    {
-      "marker": 748967,
-      "name": "Sodium, Na",
-      "amount": 129,
-      "unit": "mg",
-      "id": 2
-    },
-    {
-      "marker": 748967,
-      "name": "Zinc, Zn",
-      "amount": 1.24,
-      "unit": "mg",
-      "id": 3
-    },
-    {
-      "marker": 748967,
-      "name": "Copper, Cu",
-      "amount": 0,
-      "unit": "mg",
-      "id": 4
-    },
-    {
-      "marker": 748967,
-      "name": "Manganese, Mn",
-      "amount": 0,
-      "unit": "mg",
-      "id": 5
-    },
-    {
-      "marker": 748967,
-      "name": "Selenium, Se",
-      "amount": 31.1,
-      "unit": "µg",
-      "id": 6
-    },
-    {
-      "marker": 748967,
-      "name": "Thiamin",
-      "amount": 0.077,
-      "unit": "mg",
-      "id": 7
-    },
-    {
-      "marker": 748967,
-      "name": "Riboflavin",
-      "amount": 0.419,
-      "unit": "mg",
-      "id": 8
-    },
-    {
-      "marker": 748967,
-      "name": "Niacin",
-      "amount": 0,
-      "unit": "mg",
-      "id": 9
-    },
-    {
-      "marker": 748967,
-      "name": "Iron, Fe",
-      "amount": 1.67,
-      "unit": "mg",
-      "id": 10
-    },
-    {
-      "marker": 748967,
-      "name": "Vitamin B-6",
-      "amount": 0.063,
-      "unit": "mg",
-      "id": 11
-    },
-    {
-      "marker": 748967,
-      "name": "Folate, total",
-      "amount": 71,
-      "unit": "µg",
-      "id": 12
-    },
-    {
-      "marker": 748967,
-      "name": "Choline, total",
-      "amount": 335,
-      "unit": "mg",
-      "id": 13
-    },
-    {
-      "marker": 748967,
-      "name": "Magnesium, Mg",
-      "amount": 11.4,
-      "unit": "mg",
-      "id": 14
-    },
-    {
-      "marker": 748967,
-      "name": "Vitamin B-12",
-      "amount": 1.02,
-      "unit": "µg",
-      "id": 15
-    },
-    {
-      "marker": 748967,
-      "name": "Phosphorus, P",
-      "amount": 184,
-      "unit": "mg",
-      "id": 16
-    },
-    {
-      "marker": 748967,
-      "name": "Vitamin D (D2 + D3), International Units",
-      "amount": 98.4,
-      "unit": "IU",
-      "id": 17
-    },
-    {
-      "marker": 748967,
-      "name": "Potassium, K",
-      "amount": 132,
-      "unit": "mg",
-      "id": 18
-    },
-    {
-      "marker": 2343841,
-      "name": "Calcium, Ca",
-      "amount": 7,
-      "unit": "mg",
-      "id": 19
-    },
-    {
-      "marker": 2343841,
-      "name": "Sodium, Na",
-      "amount": 232,
-      "unit": "mg",
-      "id": 20
-    },
-    {
-      "marker": 2343841,
-      "name": "Zinc, Zn",
-      "amount": 0.51,
-      "unit": "mg",
-      "id": 21
-    },
-    {
-      "marker": 2343841,
-      "name": "Copper, Cu",
-      "amount": 0.099,
-      "unit": "mg",
-      "id": 22
-    },
-    {
-      "marker": 2343841,
-      "name": "Selenium, Se",
-      "amount": 26.2,
-      "unit": "µg",
-      "id": 23
-    },
-    {
-      "marker": 2343841,
-      "name": "Vitamin C, total ascorbic acid",
-      "amount": 0,
-      "unit": "mg",
-      "id": 24
-    },
-    {
-      "marker": 2343841,
-      "name": "Thiamin",
-      "amount": 0.272,
-      "unit": "mg",
-      "id": 25
-    },
-    {
-      "marker": 2343841,
-      "name": "Riboflavin",
-      "amount": 0.135,
-      "unit": "mg",
-      "id": 26
-    },
-    {
-      "marker": 2343841,
-      "name": "Niacin",
-      "amount": 1.68,
-      "unit": "mg",
-      "id": 27
-    },
-    {
-      "marker": 2343841,
-      "name": "Vitamin B-6",
-      "amount": 0.049,
-      "unit": "mg",
-      "id": 28
-    },
-    {
-      "marker": 2343841,
-      "name": "Folate, total",
-      "amount": 73,
-      "unit": "µg",
-      "id": 29
-    },
-    {
-      "marker": 2343841,
-      "name": "Iron, Fe",
-      "amount": 1.27,
-      "unit": "mg",
-      "id": 30
-    },
-    {
-      "marker": 2343841,
-      "name": "Vitamin B-12",
-      "amount": 0,
-      "unit": "µg",
-      "id": 31
-    },
-    {
-      "marker": 2343841,
-      "name": "Magnesium, Mg",
-      "amount": 18,
-      "unit": "mg",
-      "id": 32
-    },
-    {
-      "marker": 2343841,
-      "name": "Choline, total",
-      "amount": 6.4,
-      "unit": "mg",
-      "id": 33
-    },
-    {
-      "marker": 2343841,
-      "name": "Phosphorus, P",
-      "amount": 58,
-      "unit": "mg",
-      "id": 34
-    },
-    {
-      "marker": 2343841,
-      "name": "Folic acid",
-      "amount": 66,
-      "unit": "µg",
-      "id": 35
-    },
-    {
-      "marker": 2343841,
-      "name": "Folate, food",
-      "amount": 7,
-      "unit": "µg",
-      "id": 36
-    },
-    {
-      "marker": 2343841,
-      "name": "Potassium, K",
-      "amount": 44,
-      "unit": "mg",
-      "id": 37
-    },
-    {
-      "marker": 174584,
-      "name": "Calcium, Ca",
-      "amount": 11,
-      "unit": "mg",
-      "id": 38
-    },
-    {
-      "marker": 174584,
-      "name": "Phosphorus, P",
-      "amount": 157,
-      "unit": "mg",
-      "id": 39
-    },
-    {
-      "marker": 174584,
-      "name": "Potassium, K",
-      "amount": 483,
-      "unit": "mg",
-      "id": 40
-    },
-    {
-      "marker": 174584,
-      "name": "Sodium, Na",
-      "amount": 827,
-      "unit": "mg",
-      "id": 41
-    },
-    {
-      "marker": 174584,
-      "name": "Zinc, Zn",
-      "amount": 1.31,
-      "unit": "mg",
-      "id": 42
-    },
-    {
-      "marker": 174584,
-      "name": "Copper, Cu",
-      "amount": 0.176,
-      "unit": "mg",
-      "id": 43
-    },
-    {
-      "marker": 174584,
-      "name": "Manganese, Mn",
-      "amount": 0.011,
-      "unit": "mg",
-      "id": 44
-    },
-    {
-      "marker": 174584,
-      "name": "Selenium, Se",
-      "amount": 18.3,
-      "unit": "µg",
-      "id": 45
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin C, total ascorbic acid",
-      "amount": 0,
-      "unit": "mg",
-      "id": 46
-    },
-    {
-      "marker": 174584,
-      "name": "Iron, Fe",
-      "amount": 0.59,
-      "unit": "mg",
-      "id": 47
-    },
-    {
-      "marker": 174584,
-      "name": "Thiamin",
-      "amount": 0.212,
-      "unit": "mg",
-      "id": 48
-    },
-    {
-      "marker": 174584,
-      "name": "Riboflavin",
-      "amount": 0.18,
-      "unit": "mg",
-      "id": 49
-    },
-    {
-      "marker": 174584,
-      "name": "Niacin",
-      "amount": 2.807,
-      "unit": "mg",
-      "id": 50
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin B-6",
-      "amount": 0.179,
-      "unit": "mg",
-      "id": 51
-    },
-    {
-      "marker": 174584,
-      "name": "Magnesium, Mg",
-      "amount": 11,
-      "unit": "mg",
-      "id": 52
-    },
-    {
-      "marker": 174584,
-      "name": "Folate, total",
-      "amount": 1,
-      "unit": "µg",
-      "id": 53
-    },
-    {
-      "marker": 174584,
-      "name": "Folic acid",
-      "amount": 0,
-      "unit": "µg",
-      "id": 54
-    },
-    {
-      "marker": 174584,
-      "name": "Folate, food",
-      "amount": 1,
-      "unit": "µg",
-      "id": 55
-    },
-    {
-      "marker": 174584,
-      "name": "Choline, total",
-      "amount": 61.1,
-      "unit": "mg",
-      "id": 56
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin B-12",
-      "amount": 0.66,
-      "unit": "µg",
-      "id": 57
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin A, IU",
-      "amount": 0,
-      "unit": "IU",
-      "id": 58
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin D (D2 + D3), International Units",
-      "amount": 43,
-      "unit": "IU",
-      "id": 59
-    },
-    {
-      "marker": 174584,
-      "name": "Vitamin K (Menaquinone-4)",
-      "amount": 13.7,
-      "unit": "µg",
-      "id": 60
-    }
-  ]
+  "foodItems": [],
+  "lists": [],
+  "nutrients": []
 }
