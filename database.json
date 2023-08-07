@@ -77,6 +77,18 @@
       "fullName": "Logan Belew",
       "isStaff": true,
       "id": 13
+    },
+    {
+      "name": "Purple Gumball",
+      "email": "purp@example.com",
+      "isEmployee": false,
+      "id": 14
+    },
+    {
+      "name": "Bob Nuke",
+      "email": "BobNuke@example.com",
+      "isEmployee": true,
+      "id": 15
     }
   ],
   "customers": [
@@ -98,14 +110,14 @@
       "id": 3,
       "address": "9012 Maple Drive, Villageland",
       "phoneNumber": 1234567890,
-      "loyaltyMember": false,
+      "loyaltyMember": true,
       "userId": 5
     },
     {
       "id": 4,
       "address": "3456 Pine Road, Hamletville",
       "phoneNumber": 7890123456,
-      "loyaltyMember": true,
+      "loyaltyMember": false,
       "userId": 7
     },
     {
@@ -120,6 +132,13 @@
       "phoneNumber": "813-632-9901",
       "userId": 12,
       "id": 6,
+      "loyaltyMember": false
+    },
+    {
+      "address": "7380 johnson ave",
+      "phoneNumber": "813-632-9901",
+      "userId": 14,
+      "id": 7,
       "loyaltyMember": false
     }
   ],
@@ -153,6 +172,11 @@
       "payRate": 25,
       "userId": 11,
       "id": 6
+    },
+    {
+      "payRate": 25,
+      "userId": 15,
+      "id": 7
     }
   ],
   "categories": [
@@ -174,6 +198,13 @@
     }
   ],
   "foodItems": [],
-  "lists": [],
+  "lists": [
+    {
+      "name": "list",
+      "categoryId": 4,
+      "userId": 8,
+      "id": 1
+    }
+  ],
   "nutrients": []
 }
